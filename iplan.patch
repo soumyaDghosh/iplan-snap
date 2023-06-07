@@ -1,21 +1,3 @@
-diff -Naur a/data/ir.imansalmani.IPlan.desktop.in b/data/ir.imansalmani.IPlan.desktop.in
---- a/data/ir.imansalmani.IPlan.desktop.in	2023-06-08 01:18:03.722884686 +0530
-+++ b/data/ir.imansalmani.IPlan.desktop.in	2023-06-08 01:19:15.191012063 +0530
-@@ -1,11 +1,11 @@
- [Desktop Entry]
- Name=IPlan
- Exec=iplan
--Icon=ir.imansalmani.IPlan
-+Icon=snap.iplan.ir.imansalmani.IPlan
- Terminal=false
- Type=Application
- Categories=GNOME;GTK;Utility;
- StartupNotify=true
- X-GNOME-UsesNotifications=true
- DBusActivatable=true
--X-Purism-FormFactor=Workstation;Mobile;
-\ No newline at end of file
-+X-Purism-FormFactor=Workstation;Mobile;
 diff -Naur a/data/ir.imansalmani.IPlan.metainfo.xml.in b/data/ir.imansalmani.IPlan.metainfo.xml.in
 --- a/data/ir.imansalmani.IPlan.metainfo.xml.in	2023-06-08 01:18:29.378923841 +0530
 +++ b/data/ir.imansalmani.IPlan.metainfo.xml.in	2023-06-08 01:19:53.827103437 +0530
