@@ -38,6 +38,7 @@ parts:
     override-pull: |
       craftctl default
       patch -p1 < $CRAFT_PROJECT_DIR/iplan.patch
+      sed -i 's|Icon=ir.imansalmani.IPlan|Icon=snap.iplan.ir.imansalmani.IPlan|' data/ir.imansalmani.IPlan.desktop.in
     override-build: |
       craftctl default
       mkdir -p $CRAFT_PART_INSTALL/meta/gui
