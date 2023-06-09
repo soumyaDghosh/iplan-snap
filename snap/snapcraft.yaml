@@ -43,6 +43,7 @@ parts:
       craftctl default
       mkdir -p $CRAFT_PART_INSTALL/meta/gui
       cp -r $CRAFT_PART_INSTALL/snap/iplan/current/usr/share/icons $CRAFT_PART_INSTALL/meta/gui/
+      find $CRAFT_PART_INSTALL/meta/gui/icons -type f -not -name 'ir.imansalmani.IPlan*' -exec rm {} + -o -type d -empty -exec rmdir {} +
       for i in `find $CRAFT_PART_INSTALL/meta/gui/icons -name "*.svg" -o -name "*.png"`; do
         mv $i "`dirname $i`/snap.$CRAFT_PROJECT_NAME.`basename $i`"
       done
