@@ -28,7 +28,7 @@ parts:
     # See 'snapcraft plugins'
     plugin: meson
     source: https://github.com/iman-salmani/iplan.git
-    source-tag: 'v1.3.1'
+    source-tag: 'v1.5.0'
     build-environment:
       - RUSTUP_HOME: $CRAFT_STAGE/usr/share/rust
       - CARGO_HOME: $CRAFT_STAGE/usr/share/rust
