@@ -28,11 +28,11 @@ parts:
     # See 'snapcraft plugins'
     plugin: meson
     source: https://github.com/iman-salmani/iplan.git
-    source-tag: 'v1.5.0'
+    source-tag: 'v1.6.0'
     build-environment:
       - RUSTUP_HOME: $CRAFT_STAGE/usr/share/rust
       - CARGO_HOME: $CRAFT_STAGE/usr/share/rust
-      - CARGO_BUILD_JOBS: $CRAFT_PARALLEL_BUILD_COUNT    
+      - CARGO_BUILD_JOBS: $CRAFT_PARALLEL_BUILD_COUNT
     meson-parameters:
       - --prefix=/snap/iplan/current/usr
     override-pull: |
@@ -61,4 +61,3 @@ apps:
     command: usr/bin/iplan
     extensions: [gnome]
     common-id: ir.imansalmani.IPlan
-    
